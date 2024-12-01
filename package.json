@@ -1,6 +1,6 @@
 {
   "name": "gitignored",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package that adds a gitignored file to the project",
   "keywords": [
     "gitignored",

@@ -1,5 +1,0 @@
----
-"gitignored": patch
----
-
-initial release
