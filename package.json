@@ -1,0 +1,28 @@
+{
+  "name": "gitignored",
+  "version": "1.0.0",
+  "description": "A package that adds a gitignored file to the project",
+  "keywords": [
+    "gitignored",
+    "package",
+    "npm",
+    "git"
+  ],
+  "homepage": "https://github.com/Daim-Nickel-Penny/gitignored",
+  "bugs": {
+    "url": "https://github.com/Daim-Nickel-Penny/gitignored/issues"
+  },
+  "license": "MIT",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daim-Nickel-Penny/gitignored.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
