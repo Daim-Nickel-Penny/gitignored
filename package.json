@@ -22,8 +22,14 @@
     "dist"
   ],
   "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "ci": "npm run build",
+    "format": "prettier --write ."
+  },
   "devDependencies": {
     "@types/node": "^22.10.1",
+    "prettier": "^3.4.1",
     "typescript": "^5.7.2"
   }
 }

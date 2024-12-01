@@ -10,19 +10,19 @@ export const findGitIgnoreFile = (fileName: string) => {
     const allFiles = fs.readdirSync(TEMPLATES_DIR);
     //search for <fileName>.gitignore
     const matchedFile = allFiles.find(
-      (file) => file.includes(fileName) && file.endsWith(".gitignore")
+      (file) => file.includes(fileName) && file.endsWith(".gitignore"),
     );
 
     if (matchedFile === undefined) {
       throw new Error(
-        `Could not find a matching .gitignore file in the templates directory.`
+        `Could not find a matching .gitignore file in the templates directory.`,
       );
     }
 
     return path.join(TEMPLATES_DIR, matchedFile);
   } catch (e) {
     throw new Error(
-      `Could not find a matching .gitignore file in the templates directory.`
+      `Could not find a matching .gitignore file in the templates directory.`,
     );
   }
 };
