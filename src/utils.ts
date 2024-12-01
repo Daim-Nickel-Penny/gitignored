@@ -5,7 +5,7 @@ import fs from "fs";
 
 export const TEMPLATES_DIR = path.resolve(__dirname, "./templates");
 
-export const findGitIgnoreFile = (fileName: string) => {
+export const findGitIgnoreFile = (fileName: string): string => {
   try {
     const allFiles = fs.readdirSync(TEMPLATES_DIR);
     //search for <fileName>.gitignore

@@ -22,14 +22,24 @@
     "dist"
   ],
   "type": "module",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "ci": "npm run build",
-    "format": "prettier --write ."
+    "dev": "vitest",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+    "test": "vitest run",
+    "local-release": "changeset version && changeset publish",
+    "ci": "npm run build && npm run check-format && npm run check-exports && npm run test",
+    "prepublishOnly": "npm run ci"
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.17.0",
+    "@changesets/cli": "^2.27.10",
     "@types/node": "^22.10.1",
     "prettier": "^3.4.1",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.6"
   }
 }
